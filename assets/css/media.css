@@ -1,0 +1,53 @@
+@media (max-width: 992px) {
+    nav{
+        position: fixed;
+        width: 100%;
+        margin: 0;
+        padding:0; 
+    }
+    .ul.flex {
+        flex-direction: column;
+position: absolute; 
+top : 99px;   
+    background-color :#ffffff00;
+     justify-content: center;
+     width: 100%;
+     left: 0; 
+     z-index: 1000; 
+     backdrop-filter: blur(5px);
+    }
+.icon{
+  position: absolute;
+        right: -100px;
+        
+}
+
+   #menu-check:checked ~ .ul.flex{
+    display: flex;}
+   label .open {
+    display: inherit;
+   }
+    .close{
+    display: none;
+   }
+  
+    #menu-check:checked ~ label .open{
+      display: none;}
+      #menu-check:checked ~ label .close{
+        display: inherit;
+      }
+      
+    .ul.flex{
+        display: none;
+        flex-direction: column;
+  position: absolute;
+  top: 81px;
+  background-color: rgba(253, 254, 255, 0.451);
+   width: 100%;
+ justify-content: center;
+  left: 0;
+    padding: 20px 0;
+backdrop-filter: blur(10px);
+   
+}
+ }
