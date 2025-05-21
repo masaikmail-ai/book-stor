@@ -62,8 +62,10 @@ gap: 15px;
 ul.flex{
     display:flex;
 }
+label .open , label .close{
+  display: none;
+}
 
-/*header*/
 body {
   
   padding-top: 120px;
@@ -76,11 +78,39 @@ header {
 }
 header .cont{
     width: 50%;
+    text-align: start;
+    margin-left: 20px;
+    
+} 
+
+header h1{
+    font-size: 50px;
+    color: #070707;
+    font-weight: 700px;
+  
+}
+header .book {
+    color: hsl(181.57deg 90.53% 33.14%);
+      margin-bottom: 30px;
+}
+header p{
+    font-size: 17px;
+    color: #070707;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.button {
+    background-color: hsl(181.57deg 90.53% 33.14%);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px 0;
+    text-decoration: none;
 } 
 header .img{
-    width: 50%;
-    height: 50%;
+    width:auto;
 }
+
 #menu-check:checked ~ .ul.flex {
     display: flex;
 }
