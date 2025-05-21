@@ -62,6 +62,7 @@ header{
   background-size: cover;
                 background-position: center;
                 height: 100vh;
+                margin: 0;
 }
 header .container{
   flex-direction: column;
@@ -69,7 +70,6 @@ header .container{
 
  }
  header h1{
-  font-size: 170%;
   font-weight: 700;
   font-style: bold;
   text-align: center;
