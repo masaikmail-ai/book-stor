@@ -115,4 +115,18 @@ header .img{
     display: flex;
 }
 
-
+.cads{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.card{
+    width: 200px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px hsl(181.57deg 90.53% 33.14%);
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    
+}
