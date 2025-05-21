@@ -92,8 +92,30 @@ display: flex;
     width: 100% ; 
     height: auto;
 }
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+margin: 20px ;
+margin-bottom: 20%;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
 
-
+.about .imge img{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100% ; 
+    height: auto;
+}
 
 
 
