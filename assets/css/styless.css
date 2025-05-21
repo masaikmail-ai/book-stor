@@ -85,9 +85,13 @@ header .cont{
 } 
 
 header h1{
-    font-size: 50px;
-    color: #070707;
-    font-weight: 700px;
+    
+
+
+     font-size: 4.5rem;
+  font-weight: 700;
+ 
+  margin: 0;
   
 }
 header .book {
