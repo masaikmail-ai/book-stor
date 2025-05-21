@@ -17,10 +17,18 @@ top : 99px;
      backdrop-filter: blur(5px);
     }
 .icon{
-  position: absolute;
-        right: -100px;
+  margin-left: 15% ;
+    justify-content: center;
         
 }
+label[for="menu-check"] {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-size: 28px;
+  z-index: 1101;
+}
+
 
    #menu-check:checked ~ .ul.flex{
     display: flex;}
@@ -50,4 +58,43 @@ top : 99px;
 backdrop-filter: blur(10px);
    
 }
+header{
+  background-size: cover;
+                background-position: center;
+                height: 100vh;
+}
+header .container{
+  flex-direction: column;
+  text-align: center;
+
  }
+ header h1{
+  font-size: 170%;
+  font-weight: 700;
+  font-style: bold;
+  text-align: center;
+  margin: 0;
+ }
+header p{
+  font-size: 100%;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+header .button{
+text-align: center;
+}
+header img{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100% ; 
+    height: auto;
+}
+
+
+
+
+
+}
