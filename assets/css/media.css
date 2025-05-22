@@ -147,16 +147,33 @@ margin-bottom: 5%;
     padding: 0 10px;
     gap: 20px;
     margin: 5px
-    
+
   }
 
   .card {
     width: calc(50% - 20px);
+    height: 20%;
     margin: 0;
     padding: 15px;
     box-sizing: border-box;
     text-align: center;
   }
-
+.card ico{
+  font-size: 30px;
+  }
+  .card p{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .about .cont{
+    width: 90%;
+    text-align: center;
+    margin-left: 0px;
+  }  
+  
   
 }
