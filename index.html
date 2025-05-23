@@ -16,6 +16,58 @@
                 background-position: center;
                 height: 100vh;
             margin-top: 0;}
+
+
+
+ .featured-section {
+  padding: 50px 30px;
+  background-color: #f8f8f8;
+}
+
+.featured-section h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+
+.books-slider {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 10px;
+}
+
+.books-slider::-webkit-scrollbar {
+  height: 8px;
+}
+
+.books-slider::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.book-card {
+  min-width: 160px;
+  scroll-snap-align: start;
+}
+
+.book-card img {
+  width: 100%;
+  height: auto;
+  
+  border:2px solid rgb(95, 93, 93);
+
+}
+
+.book-card:hover {
+  box-shadow: 0 8px 16px rgba(69, 133, 145, 0.7);
+}
+
+
         </style>
     </head>
     <body>
@@ -94,6 +146,32 @@
         </div>
     </div>
     </section>
+
+     <section class="featured-section">
+<h2>Featured Books</h2>
+<div class="books-slider">
+    <div class="book-card"><img src="assets/img/Books/book_1.jpg" alt="Book 1"></div>
+    <div class="book-card"><img src="assets/img/Books/book_2.jpg" alt="Book 2"></div>
+    <div class="book-card"><img src="assets/img/Books/book_3.jpg" alt="Book 3"></div>
+    <div class="book-card"><img src="assets/img/Books/book_4.jpg" alt="Book 4"></div>
+    <div class="book-card"><img src="assets/img/Books/book_5.jpg" alt="Book 5"></div>
+    <div class="book-card"><img src="assets/img/Books/book_6.jpg" alt="Book 6"></div>
+    <div class="book-card"><img src="assets/img/Books/book_7.png" alt="Book 7"></div>
+    <div class="book-card"><img src="assets/img/Books/book_8.png" alt="Book 8"></div>
+    <div class="book-card"><img src="assets/img/Books/book_9.jpg" alt="Book 9"></div>
+    <div class="book-card"><img src="assets/img/Books/book_10.png" alt="Book 10"></div>
+    <div class="book-card"><img src="assets/img/Books/book_11.jpg" alt="Book 11"></div>
+    <div class="book-card"><img src="assets/img/Books/book_12.png" alt="Book 12"></div>
+    <div class="book-card"><img src="assets/img/Books/book_13.png" alt="Book 13"></div>
+    <div class="book-card"><img src="assets/img/Books/book_14.png" alt="Book 14"></div>
+    <div class="book-card"><img src="assets/img/Books/book_15.png" alt="Book 15"></div>
+
+
+</div>
+
+
+
+
 
     </body>
 </html>
