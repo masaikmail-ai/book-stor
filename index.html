@@ -122,42 +122,34 @@
 }
 
 
-.new-arrivals {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.arrivals-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 20px;
-  margin: 40px auto;
+  padding: 0 30px;
 }
 
 .arrival-card {
+  background-color: #fff;
   border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 170px;
-  text-align: center;
   padding: 10px;
+  text-align: center;
   transition: transform 0.3s ease;
 }
 
 .arrival-card img {
   width: 100%;
-  height: auto;
-  border-radius: 5px;
-}
-
-.arrival-card h3 {
-  margin: 10px 0 5px;
-  font-size: 16px;
-}
-
-.rating {
-  color: #187faf;
-  margin: 5px 0;
-  font-size: 14px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .arrival-card:hover {
   transform: scale(1.05);
+}
+
+.rating {
+  color: #f1c40f;
+  margin: 10px 0;
 }
 
 
@@ -420,10 +412,12 @@
 
 
      <section id="arrivals">
-        <h2 style="text-align: center;">New Arrivals</h2><br><br>
-      
-        <div class="arrival-card">
-  <img src="assets/img/Arrival/arrival_1.jpg" alt="Arr 1">
+  <h2 style="text-align: center;">New Arrivals</h2><br><br>
+
+  <div class="arrivals-container">
+    
+    <div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_1.jpg" alt="Arrival 1">
   <h3>New Arrivals</h3>
 
   <div class="rating">
@@ -435,9 +429,150 @@
   </div>
 
   <a class="learn-btn">Learn More</a>
+
 </div>
 
-  </section>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_2.jpg" alt="Arrival 2">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_3.jpg" alt="Arrival 3">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_4.jpg" alt="Arrival 4">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_5.jpg" alt="Arrival 5">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_6.jpg" alt="Arrival 6">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_7.jpg" alt="Arrival 7">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_8.webp" alt="Arrival 8">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_9.jpg" alt="Arrival 9">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_10.jpg" alt="Arrival 10">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+
+
+
+
+  </section><br><br>
 
 
 
