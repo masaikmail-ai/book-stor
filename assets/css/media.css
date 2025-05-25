@@ -103,13 +103,13 @@ display: flex;
 }
 
 .container.card {
-  flex: 1 1 calc(50% - 20px); /* كل كرت يأخذ تقريباً نصف العرض */
+  flex: 1 1 calc(50% - 20px); 
   max-width: calc(50% - 20px); 
   box-sizing: border-box;
   margin: 10px 0;
 }
 
-}
+
 .about{
   display: flex;
   flex-direction: column;
