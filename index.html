@@ -10,6 +10,7 @@
      
         <title>BOOK STORE</title>
         <style>
+
             header {
                 background-image: url('assets/img/bg.png');
                 background-size: cover;
@@ -18,6 +19,7 @@
             margin-top: 0;}
 
 
+      
 
  .featured-section {
   padding: 50px 30px;
@@ -51,21 +53,156 @@
 }
 
 .book-card {
+
   min-width: 160px;
   scroll-snap-align: start;
+   border:2px solid rgb(95, 93, 93);
+
 }
 
 .book-card img {
   width: 100%;
   height: auto;
   
-  border:2px solid rgb(95, 93, 93);
+  
 
 }
 
 .book-card:hover {
   box-shadow: 0 8px 16px rgba(69, 133, 145, 0.7);
 }
+.book-info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.book-info h4 {
+  margin: 5px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.book-info .author {
+  color: #333;
+  margin: 5px 0;
+}
+
+.book-info .genre a {
+  color: aquamarine;
+  text-decoration: none;
+  margin: 0 2px;
+}
+
+.book-info .price {
+  margin: 5px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.book-info .price span {
+  text-decoration: line-through;
+  color: #999;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+.learn-btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-top: 5px;
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  border: 2px solid aquamarine;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.learn-btn:hover {
+  transform: scale(1.05);
+}
+
+
+.arrivals-container {
+  display: grid;
+   grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 0 30px;
+}
+
+.arrival-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.arrival-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.arrival-card:hover {
+  transform: scale(1.05);
+}
+
+.rating {
+  color: aquamarine;
+  margin: 10px 0;
+}
+
+
+
+.reviews-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 40px;
+  margin-top: 20px;
+}
+
+.review-card {
+  background-color: #fff;
+  border: 1px solid #fff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(13, 160, 197, 0.6);
+  position: relative;
+}
+
+.review-card img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.review-card::after {
+  content: "❝";
+  font-size: 100px;
+  color: gray;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.review-card h3 {
+  margin: 10px 0 5px;
+}
+
+.review-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+
+
+
 
 
         </style>
@@ -145,29 +282,409 @@
         <button class="button">Learn More</button>
         </div>
     </div>
+
+
+
+    <br><br><br>
     </section>
 
-     <section class="featured-section">
-<h2>Featured Books</h2>
+     <section id="featured">
+  <h2 style="text-align: center;">Featured Books</h2>
+  <br>
 <div class="books-slider">
-    <div class="book-card"><img src="assets/img/Books/book_1.jpg" alt="Book 1"></div>
-    <div class="book-card"><img src="assets/img/Books/book_2.jpg" alt="Book 2"></div>
-    <div class="book-card"><img src="assets/img/Books/book_3.jpg" alt="Book 3"></div>
-    <div class="book-card"><img src="assets/img/Books/book_4.jpg" alt="Book 4"></div>
-    <div class="book-card"><img src="assets/img/Books/book_5.jpg" alt="Book 5"></div>
-    <div class="book-card"><img src="assets/img/Books/book_6.jpg" alt="Book 6"></div>
-    <div class="book-card"><img src="assets/img/Books/book_7.png" alt="Book 7"></div>
-    <div class="book-card"><img src="assets/img/Books/book_8.png" alt="Book 8"></div>
-    <div class="book-card"><img src="assets/img/Books/book_9.jpg" alt="Book 9"></div>
-    <div class="book-card"><img src="assets/img/Books/book_10.png" alt="Book 10"></div>
-    <div class="book-card"><img src="assets/img/Books/book_11.jpg" alt="Book 11"></div>
-    <div class="book-card"><img src="assets/img/Books/book_12.png" alt="Book 12"></div>
-    <div class="book-card"><img src="assets/img/Books/book_13.png" alt="Book 13"></div>
-    <div class="book-card"><img src="assets/img/Books/book_14.png" alt="Book 14"></div>
-    <div class="book-card"><img src="assets/img/Books/book_15.png" alt="Book 15"></div>
+  
+  <div class="book-card">
+  <img src="assets/img/Books/book_1.jpg" alt="Book 1">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
 
+ <div class="book-card">
+  <img src="assets/img/Books/book_2.jpg" alt="Book 2">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+ <div class="book-card">
+  <img src="assets/img/Books/book_3.jpg" alt="Book 3">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+ <div class="book-card">
+  <img src="assets/img/Books/book_4.jpg" alt="Book 4">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+ <div class="book-card">
+  <img src="assets/img/Books/book_5.jpg" alt="Book 5">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+
+ <div class="book-card">
+  <img src="assets/img/Books/book_6.jpg" alt="Book 6">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+
+ <div class="book-card">
+  <img src="assets/img/Books/book_7.png" alt="Book 7">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+
+ <div class="book-card">
+  <img src="assets/img/Books/book_8.png" alt="Book 8">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+
+ <div class="book-card">
+  <img src="assets/img/Books/book_9.jpg" alt="Book 9">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+
+ <div class="book-card">
+  <img src="assets/img/Books/book_10.png" alt="Book 10">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+
+
+ <div class="book-card">
+  <img src="assets/img/Books/book_11.jpg" alt="Book 11">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+ <div class="book-card">
+  <img src="assets/img/Books/book_12.png" alt="Book 12">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+ <div class="book-card">
+  <img src="assets/img/Books/book_13.png" alt="Book 13">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+ <div class="book-card">
+  <img src="assets/img/Books/book_14.png" alt="Book 14">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
+
+ <div class="book-card">
+  <img src="assets/img/Books/book_15.png" alt="Book 15">
+  <div class="book-info">
+    <h4>Featured Books</h4>
+    <p class="author">John Deo</p>
+    <p class="genre"><a href="#">Thriller</a>, <a href="#">Horror</a>, <a href="#">Romance</a></p>
+    <p class="price">$25.50 <span>$28.60</span></p>
+    <a class="learn-btn">Learn More</a>
+  </div>
+</div>
 
 </div>
+
+
+<br><br><br>
+
+
+     <section id="arrivals">
+  <h2 style="text-align: center;">New Arrivals</h2><br><br>
+
+  <div class="arrivals-container">
+    
+    <div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_1.jpg" alt="Arrival 1">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_2.jpg" alt="Arrival 2">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_3.jpg" alt="Arrival 3">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_4.jpg" alt="Arrival 4">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+  <br>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_5.jpg" alt="Arrival 5">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_6.jpg" alt="Arrival 6">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_7.jpg" alt="Arrival 7">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_8.webp" alt="Arrival 8">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_9.jpg" alt="Arrival 9">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+<div class="arrival-card">
+  <img src="assets/img/Arrival/arrival_10.jpg" alt="Arrival 10">
+  <h3>New Arrivals</h3>
+
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star-half-alt"></i>
+  </div>
+
+  <a class="learn-btn">Learn More</a>
+
+</div>
+
+
+
+
+  </section><br><br><br>
+
+
+  <section id="reviews">
+  <h2 style="text-align: center;">Reviews</h2><br><br>
+  <div class="reviews-container">
+
+    <div class="review-card">
+      <img src="assets/img/Review/review_1.png" alt="Review 1">
+      <h3>John Deo</h3>
+      <p>Lorem ipsum dolor sit amet , consectetur adipisicing elit. Natus eos doloribus iure distinctio!</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <img src="assets/img/Review/review_2.png" alt="Review 2">
+      <h3>John Deo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure distinctio!</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <img src="assets/img/Review/review_3.png" alt="Review 3">
+      <h3>John Deo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure distinctio!</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+    <div class="review-card">
+      <img src="assets/img/Review/review_4.png" alt="Review 4">
+      <h3>John Deo</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus eos doloribus iure distinctio!</p>
+      <div class="rating">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+    </div>
+
+  </div>
+</section><ber><br><br><br>
+
+
+
 
 
 
